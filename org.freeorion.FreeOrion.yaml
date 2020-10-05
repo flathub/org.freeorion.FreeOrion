@@ -35,8 +35,8 @@ modules:
     #   - /include
     sources:
       - type: archive
-        url: https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2
-        sha256: 59c9b274bc451cf91a9ba1dd2c7fdcaf5d60b1b3aa83f2c9fa143417cc660722
+        url: https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2
+        sha256: 83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1
 
   - name: freeorion
     buildsystem: cmake-ninja
@@ -45,9 +45,7 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.4.10.tar.gz
-        sha256: 638b684db2a031709cee8a7702a8caa43ae6801ce561edd03c15c16b43307ae2
-      - type: patch
-        path: version.patch
+        url: https://github.com/freeorion/freeorion/archive/v0.4.10.1.tar.gz
+        sha256: ce53307f25c82efaa52b5ea98934648e76b9fa3de5fffbf012bda7cf97bf3168
       - type: patch
         path: appdata.patch
