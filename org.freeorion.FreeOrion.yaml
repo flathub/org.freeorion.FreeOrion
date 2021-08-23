@@ -44,7 +44,7 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.4.10.1.tar.gz
-        sha256: ce53307f25c82efaa52b5ea98934648e76b9fa3de5fffbf012bda7cf97bf3168
+        url: https://github.com/freeorion/freeorion/archive/v0.4.10.2.tar.gz
+        sha256: 8c3bd4dcae7e2b160361b88f9a97cdb62b5c7413675acc15774054878228e709
       - type: patch
         path: appdata.patch
