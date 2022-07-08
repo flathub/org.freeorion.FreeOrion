@@ -36,6 +36,11 @@ modules:
       - type: archive
         url: https://boostorg.jfrog.io/artifactory/main/release/1.77.0/source/boost_1_77_0.tar.bz2
         sha256: fc9f85fc030e233142908241af7a846e60630aa7388de9a5fafb1f3a26840854
+        x-checker-data:
+          type: anitya
+          project-id: 6845
+          stable-only: true
+          url-template: https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2
 
   - name: freeorion
     buildsystem: cmake-ninja
@@ -46,5 +51,10 @@ modules:
       - type: archive
         url: https://github.com/freeorion/freeorion/archive/v0.4.10.2.tar.gz
         sha256: 8c3bd4dcae7e2b160361b88f9a97cdb62b5c7413675acc15774054878228e709
+        x-checker-data:
+          type: anitya
+          project-id: 12152
+          stable-only: true
+          url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
       - type: patch
         path: appdata.patch
