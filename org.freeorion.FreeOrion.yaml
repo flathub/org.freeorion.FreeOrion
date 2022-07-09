@@ -41,8 +41,8 @@ modules:
 
   - name: freeorion
     buildsystem: cmake-ninja
-    # config-opts:
-    #   - -DOpenGL_GL_PREFERENCE=GLVND
+    config-opts:
+      - -DOpenGL_GL_PREFERENCE=GLVND
     builddir: true
     sources:
       - type: archive
