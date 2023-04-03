@@ -1,29 +1,26 @@
+From 487b68f1a38d9b1ca83a1196d4c1fc719bbae44f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Timoth=C3=A9e=20Ravier?= <tim@siosm.fr>
+Date: Mon, 3 Apr 2023 12:21:53 +0200
+Subject: [PATCH] packaging: Update releases in appdata metainfo
+
+---
+ packaging/org.freeorion.FreeOrion.metainfo.xml | 3 +++
+ 1 file changed, 3 insertions(+)
+
 diff --git a/packaging/org.freeorion.FreeOrion.metainfo.xml b/packaging/org.freeorion.FreeOrion.metainfo.xml
-index 135ad3aa5..a2da596a0 100644
+index a2da596a0..06f90bcf7 100644
 --- a/packaging/org.freeorion.FreeOrion.metainfo.xml
 +++ b/packaging/org.freeorion.FreeOrion.metainfo.xml
-@@ -38,4 +38,24 @@
-       <image width="1600" height="900" type="source">https://www.freeorion.org/screenshots/FreeOrion_ResearchScreen.png</image>
+@@ -39,6 +39,9 @@
      </screenshot>
    </screenshots>
-+  <releases>
-+    <release version="0.4.10" date="2020-07-26"/>
-+    <release version="0.4.9" date="2020-02-09"/>
-+    <release version="0.4.8" date="2018-08-30"/>
-+    <release version="0.4.7.1" date="2017-09-10"/>
-+    <release version="0.4.7" date="2017-05-01"/>
-+    <release version="0.4.6" date="2016-09-22"/>
-+    <release version="0.4.5" date="2015-09-08"/>
-+    <release version="0.4.4" date="2014-09-07"/>
-+    <release version="0.4.3" date="2013-10-26"/>
-+    <release version="0.4.2" date="2013-02-20"/>
-+    <release version="0.4.1" date="2012-08-03"/>
-+    <release version="0.4" date="2012-02-05"/>
-+  </releases>
-+  <content_rating type="oars-1.1">
-+    <content_attribute id="violence-bloodshed">mild</content_attribute>
-+    <content_attribute id="language-humor">mild</content_attribute>
-+    <content_attribute id="language-discrimination">intense</content_attribute>
-+    <content_attribute id="social-chat">intense</content_attribute>
-+  </content_rating>
- </component>
+   <releases>
++    <release version="0.5" date="2023-04-02"/>
++    <release version="0.4.10.2" date="2021-08-15"/>
++    <release version="0.4.10.1" date="2020-09-13"/>
+     <release version="0.4.10" date="2020-07-26"/>
+     <release version="0.4.9" date="2020-02-09"/>
+     <release version="0.4.8" date="2018-08-30"/>
+-- 
+2.40.0
+
