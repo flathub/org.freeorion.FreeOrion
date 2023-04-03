@@ -27,8 +27,6 @@ modules:
       - ./b2 --reconfigure -j ${FLATPAK_BUILDER_N_JOBS} toolset=gcc threading=multi
         variant=release debug-symbols=off link=shared runtime-link=shared cflags="-I/usr/include/python3.7m
         -fPIC -O3" cxxflags="-I/usr/include/python3.7m -fPIC -O3" install
-    # cleanup:
-    #   - /include
     sources:
       - type: archive
         url: https://boostorg.jfrog.io/artifactory/main/release/1.81.0/source/boost_1_81_0.tar.bz2
@@ -41,8 +39,6 @@ modules:
 
   - name: freeorion
     buildsystem: cmake-ninja
-    # config-opts:
-    #   - -DOpenGL_GL_PREFERENCE=GLVND
     builddir: true
     sources:
       - type: archive
