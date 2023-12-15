@@ -23,7 +23,7 @@ modules:
   - name: boost
     buildsystem: simple
     build-commands:
-      - ./bootstrap.sh --prefix=${FLATPAK_DEST} --with-python=/usr/bin/python3 --with-libraries=filesystem,iostreams,locale,log,serialization,system,thread,python
+      - ./bootstrap.sh --prefix=${FLATPAK_DEST} --with-python=/usr/bin/python3 --with-libraries=filesystem,iostreams,locale,log,serialization,system,thread,python,regex
       - ./b2 --reconfigure -j ${FLATPAK_BUILDER_N_JOBS} toolset=gcc threading=multi
         variant=release debug-symbols=off link=shared runtime-link=shared cflags="-I/usr/include/python3.7m
         -fPIC -O3" cxxflags="-I/usr/include/python3.7m -fPIC -O3" install
