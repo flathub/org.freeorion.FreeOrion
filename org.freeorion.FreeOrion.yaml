@@ -49,5 +49,3 @@ modules:
           project-id: 12152
           stable-only: true
           url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
-      - type: patch
-        path: appdata.patch
