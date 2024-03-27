@@ -49,3 +49,7 @@ modules:
           project-id: 12152
           stable-only: true
           url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
+      - type: patch
+        path: 0001-icon-Rename-icon-to-org.freeorion.FreeOrion.png.patch
+      - type: patch
+        path: 0002-packaging-metainfo-Use-a-shorter-summary.patch
