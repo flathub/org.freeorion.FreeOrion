@@ -42,12 +42,14 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.5.tar.gz
-        sha256: b95667957047e02cf4bf4b230bf3ad02edbeffff6be600cc38a62cb115adb10c
+        url: https://github.com/freeorion/freeorion/archive/v0.5.0.1.tar.gz
+        sha256: a9349692e355a39a3cc456ed0fa9cb1ed7a5f3d120a0e3253f730fa6caa3a509
         x-checker-data:
           type: anitya
           project-id: 12152
           stable-only: true
           url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
       - type: patch
-        path: appdata.patch
+        path: 0001-icon-Rename-icon-to-org.freeorion.FreeOrion.png.patch
+      - type: patch
+        path: 0002-packaging-metainfo-Use-a-shorter-summary.patch
