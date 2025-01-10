@@ -42,8 +42,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.5.1-rc1.tar.gz
-        sha256: 0aa18119739d35bd43988beb91586a5748fd6abe5752f19ce978debc837ae974
+        url: https://github.com/freeorion/freeorion/archive/v0.5.1-rc2.tar.gz
+        sha256: c453f8e5323892f0d5b264aa2bd64a43d597d4c6d4d288ed745cdcfe9fb404e0
         x-checker-data:
           type: anitya
           project-id: 12152
