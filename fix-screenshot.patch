@@ -1,0 +1,41 @@
+From 5ccc8a86e9ef522a66653802f93e70bbf2aa1490 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 30 Apr 2026 22:21:20 +0300
+Subject: [PATCH] Fix screenshot URLs
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ packaging/org.freeorion.FreeOrion.metainfo.xml | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/packaging/org.freeorion.FreeOrion.metainfo.xml b/packaging/org.freeorion.FreeOrion.metainfo.xml
+index 17f563c..5bc8fef 100644
+--- a/packaging/org.freeorion.FreeOrion.metainfo.xml
++++ b/packaging/org.freeorion.FreeOrion.metainfo.xml
+@@ -24,19 +24,19 @@
+   <screenshots>
+     <screenshot type="default">
+       <caption>Galaxy map with system statistics</caption>
+-      <image width="1600" height="900" type="source">https://www.freeorion.org/screenshots/FreeOrion_GalaxyMapSystemPlanetsFleets.png</image>
++      <image width="1600" height="900" type="source">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZnJlZW9yaW9uL0ZyZWVPcmlvbi82NGRhYjVmN2M2OWU0NTZiMTM4ZTc4NWIwMzlhMmRmOC9zY3JlZW5zaG90cy9pbWFnZS0xX29yaWcucG5n</image>
+     </screenshot>
+     <screenshot>
+       <caption>Galaxy map with combat report</caption>
+-      <image width="1600" height="900" type="source">https://www.freeorion.org/screenshots/FreeOrion_GalaxyMapCombatGraph.png</image>
++      <image width="1600" height="900" type="source">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZnJlZW9yaW9uL0ZyZWVPcmlvbi82NGRhYjVmN2M2OWU0NTZiMTM4ZTc4NWIwMzlhMmRmOC9zY3JlZW5zaG90cy9pbWFnZS0yX29yaWcucG5n</image>
+     </screenshot>
+     <screenshot>
+       <caption>Empirial production queue</caption>
+-      <image width="1600" height="900" type="source">https://www.freeorion.org/screenshots/FreeOrion_ProductionScreen.png</image>
++      <image width="1600" height="900" type="source">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZnJlZW9yaW9uL0ZyZWVPcmlvbi82NGRhYjVmN2M2OWU0NTZiMTM4ZTc4NWIwMzlhMmRmOC9zY3JlZW5zaG90cy9pbWFnZS0zX29yaWcucG5n</image>
+     </screenshot>
+     <screenshot>
+       <caption>Empirial research tree</caption>
+-      <image width="1600" height="900" type="source">https://www.freeorion.org/screenshots/FreeOrion_ResearchScreen.png</image>
++      <image width="1600" height="900" type="source">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9vcmcvZnJlZW9yaW9uL0ZyZWVPcmlvbi82NGRhYjVmN2M2OWU0NTZiMTM4ZTc4NWIwMzlhMmRmOC9zY3JlZW5zaG90cy9pbWFnZS00X29yaWcucG5n</image>
+     </screenshot>
+   </screenshots>
+   <releases>
+--
+libgit2 1.7.2
+
