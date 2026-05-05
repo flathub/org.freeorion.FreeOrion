@@ -1,6 +1,5 @@
 app-id: org.freeorion.FreeOrion
 command: freeorion
-
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
@@ -23,14 +22,14 @@ modules:
   - name: boost
     buildsystem: simple
     build-commands:
-      - ./bootstrap.sh --prefix=${FLATPAK_DEST} --with-python=/usr/bin/python3 --with-libraries=filesystem,iostreams,locale,log,serialization,system,thread,python,regex
+      - ./bootstrap.sh --prefix=${FLATPAK_DEST} --with-python=/usr/bin/python3 --with-libraries=filesystem,iostreams,locale,log,serialization,thread,python,regex
       - ./b2 --reconfigure -j ${FLATPAK_BUILDER_N_JOBS} toolset=gcc threading=multi
         variant=release debug-symbols=off link=shared runtime-link=shared cflags="-I/usr/include/python3.7m
         -fPIC -O3" cxxflags="-I/usr/include/python3.7m -fPIC -O3" install
     sources:
       - type: archive
-        url: https://archives.boost.io/release/1.88.0/source/boost_1_88_0.tar.bz2
-        sha256: 46d9d2c06637b219270877c9e16155cbd015b6dc84349af064c088e9b5b12f7b
+        url: https://archives.boost.io/release/1.91.0/source/boost_1_91_0.tar.bz2
+        sha256: de5e6b0e4913395c6bdfa90537febd9028ea4c0735d2cdb0cd9b45d5f51264f5
         x-checker-data:
           type: anitya
           project-id: 6845
@@ -42,10 +41,12 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/freeorion/freeorion/archive/v0.5.1.1.tar.gz
-        sha256: 42e379e55c0c019f4193939e45a0c591cf15dff68d90b4e5e59e60df8894ac70
+        url: https://github.com/freeorion/freeorion/archive/v0.5.1.2.tar.gz
+        sha256: c2f90534bdf6b8281a78d01be9d7ccf5ae4f401f9f4fe4b3693de3443977c0d7
         x-checker-data:
           type: anitya
           project-id: 12152
           stable-only: true
           url-template: https://github.com/freeorion/freeorion/archive/v$version.tar.gz
+      - type: patch
+        path: fix-screenshot.patch
